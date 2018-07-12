@@ -84,6 +84,10 @@ h2 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
+div.no-pic{
+  background: #177bb2;
+}
+
 main article {
   margin: 0 auto;
   max-width: 800px;
