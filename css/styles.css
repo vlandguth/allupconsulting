@@ -40,9 +40,19 @@ nav ul li {
   display: inline-block;
 }
 
-nav #burger{
-  display:none;
+nav #burger {
+  display: none;
 }
+
+.min li,
+.min a,
+#close {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 
 h1 {
   color: white;
@@ -80,9 +90,6 @@ main article {
   padding: 60px 50px;
 }
 
-.team {
-}
-
 button {
   margin-top: 10px;
   font-family: "Tajawal", sans-serif;
@@ -99,16 +106,15 @@ button:hover {
   background: rgba(23, 123, 178, 0.3);
 }
 
-.center{
-  display:flex;
-  justify-content:center;
+.center {
+  display: flex;
+  justify-content: center;
 }
 
-.center button{
+.center button {
   background: #177bb2;
-  color:whitesmoke;
+  color: whitesmoke;
 }
-
 
 footer {
   padding: 10px 20px;
@@ -122,21 +128,37 @@ footer hr {
   height: 1px;
 }
 
+#modal-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #124973;
+  z-index: 5;
+  display: none;
+}
+
+#overlay-wrapper {
+  padding: 0 60px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
 
 @media screen and (max-width: 620px) {
-  .social-media, .pages{
-    display:none;
+  .social-media,
+  .pages {
+    display: none;
   }
-  
-  nav #burger{
-    display:inline-block;
+
+  nav #burger {
+    display: inline-block;
     font-size: 30px;
-}
-  h1{
-    margin-top:60px;
+  }
+  h1 {
+    margin-top: 60px;
     font-size: 1.9em;
   }
-  
-  
 }
-
